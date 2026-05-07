@@ -1,0 +1,50 @@
+# StudySync .gitignore
+# Ignore environment-specific files
+
+# System
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# PHP
+.php_cs.cache
+.phpunit.result.cache
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/
+temp/
+cache/
+
+# Database backups
+*.sql.bak
+*.sql.gz
+
+# Dependencies
+vendor/
+node_modules/
+
+# Config with credentials (if created locally)
+config/database.local.php
+
+# OS
+.AppleDouble
+.AppleDB_FIXME
+ehthumbs.db

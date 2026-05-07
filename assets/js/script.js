@@ -99,21 +99,6 @@ function attachEventListeners() {
             });
         });
     }
-
-    // Search input with debounce
-    const searchInput = document.querySelector('[data-action="search"]');
-    if (searchInput) {
-        let searchTimeout;
-        searchInput.addEventListener('input', function() {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(() => {
-                // Trigger search
-                if (document.getElementById('filterForm')) {
-                    document.getElementById('filterForm').submit();
-                }
-            }, 500);
-        });
-    }
 }
 
 /**
